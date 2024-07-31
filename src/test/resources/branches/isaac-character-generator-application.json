@@ -1,0 +1,18 @@
+[
+  {
+    "name": "PullRequest",
+    "commit": {
+      "sha": "53484d6eb7ecf2a0a030d2279b2a45a642db96e0",
+      "url": "https://api.github.com/repos/Rybaczek/isaac-character-generator-application/commits/53484d6eb7ecf2a0a030d2279b2a45a642db96e0"
+    },
+    "protected": false
+  },
+  {
+    "name": "master",
+    "commit": {
+      "sha": "bd844dfefb6319e8d0e34b9892812387933bd6d5",
+      "url": "https://api.github.com/repos/Rybaczek/isaac-character-generator-application/commits/bd844dfefb6319e8d0e34b9892812387933bd6d5"
+    },
+    "protected": false
+  }
+]

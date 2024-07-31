@@ -1,0 +1,4 @@
+rest-template-client:
+  clients:
+    github:
+      root-url: https://api.github.com

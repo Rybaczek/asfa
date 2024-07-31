@@ -1,0 +1,76 @@
+{
+  "githubRepositories": [
+    {
+      "repositoryName": "atipera",
+      "ownerLogin": "Rybaczek",
+      "branches": {
+        "githubBranches": [
+          {
+            "name": "master",
+            "sha": "f3a2a3bb41c5dfb7b96a9f7c650507262c51cdf8"
+          }
+        ]
+      }
+    },
+    {
+      "repositoryName": "bookstore-spring-exploratory",
+      "ownerLogin": "Rybaczek",
+      "branches": {
+        "githubBranches": [
+          {
+            "name": "master",
+            "sha": "05410d511387ba45ce33d2aaee56a0b16a7f1528"
+          }
+        ]
+      }
+    },
+    {
+      "repositoryName": "gamemasters-organizer-bestiary-and-location-interactive-navigator",
+      "ownerLogin": "Rybaczek",
+      "branches": {
+        "githubBranches": [
+          {
+            "name": "detached",
+            "sha": "90768a1a25471e68c559804f5914c50e9f0ebb7d"
+          },
+          {
+            "name": "in-memory-repository",
+            "sha": "5dcd6d19c5b479cf2e347a757af9e20600f8ba48"
+          },
+          {
+            "name": "master",
+            "sha": "37686a68b41b24f00090a1b6bfc3709dedeca459"
+          },
+          {
+            "name": "pull",
+            "sha": "aa1e36f4196d2da6ff3a8597ca1f0de596d27081"
+          },
+          {
+            "name": "scheduler",
+            "sha": "04c8a9691475941e7a82dfb9f9871627b402e08d"
+          },
+          {
+            "name": "soft-delete-feature",
+            "sha": "d319b7436f4ffa4acaab7ad25f4e5f00484933eb"
+          }
+        ]
+      }
+    },
+    {
+      "repositoryName": "isaac-character-generator-application",
+      "ownerLogin": "Rybaczek",
+      "branches": {
+        "githubBranches": [
+          {
+            "name": "PullRequest",
+            "sha": "53484d6eb7ecf2a0a030d2279b2a45a642db96e0"
+          },
+          {
+            "name": "master",
+            "sha": "bd844dfefb6319e8d0e34b9892812387933bd6d5"
+          }
+        ]
+      }
+    }
+  ]
+}

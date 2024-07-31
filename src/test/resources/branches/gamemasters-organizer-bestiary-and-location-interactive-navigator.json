@@ -1,0 +1,50 @@
+[
+  {
+    "name": "detached",
+    "commit": {
+      "sha": "90768a1a25471e68c559804f5914c50e9f0ebb7d",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/90768a1a25471e68c559804f5914c50e9f0ebb7d"
+    },
+    "protected": false
+  },
+  {
+    "name": "in-memory-repository",
+    "commit": {
+      "sha": "5dcd6d19c5b479cf2e347a757af9e20600f8ba48",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/5dcd6d19c5b479cf2e347a757af9e20600f8ba48"
+    },
+    "protected": false
+  },
+  {
+    "name": "master",
+    "commit": {
+      "sha": "37686a68b41b24f00090a1b6bfc3709dedeca459",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/37686a68b41b24f00090a1b6bfc3709dedeca459"
+    },
+    "protected": true
+  },
+  {
+    "name": "pull",
+    "commit": {
+      "sha": "aa1e36f4196d2da6ff3a8597ca1f0de596d27081",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/aa1e36f4196d2da6ff3a8597ca1f0de596d27081"
+    },
+    "protected": false
+  },
+  {
+    "name": "scheduler",
+    "commit": {
+      "sha": "04c8a9691475941e7a82dfb9f9871627b402e08d",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/04c8a9691475941e7a82dfb9f9871627b402e08d"
+    },
+    "protected": false
+  },
+  {
+    "name": "soft-delete-feature",
+    "commit": {
+      "sha": "d319b7436f4ffa4acaab7ad25f4e5f00484933eb",
+      "url": "https://api.github.com/repos/Rybaczek/gamemasters-organizer-bestiary-and-location-interactive-navigator/commits/d319b7436f4ffa4acaab7ad25f4e5f00484933eb"
+    },
+    "protected": false
+  }
+]

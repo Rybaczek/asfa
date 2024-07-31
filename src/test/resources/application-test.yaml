@@ -1,0 +1,11 @@
+server:
+  port: '9001'
+
+rest-template-client:
+  clients:
+    github:
+      root-url: http://localhost:${wiremock.server.port}
+
+wiremock:
+  server:
+    port: 9002

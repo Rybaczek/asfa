@@ -3,6 +3,7 @@ package com.atipera.api.controller;
 import com.atipera.AssertionResourceReader;
 import com.atipera.BaseIntegrationTest;
 import com.atipera.http.clients.GithubHttpClientStub;
+import org.assertj.core.api.Assertions;
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
@@ -18,7 +19,7 @@ import java.util.Objects;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class UserControllerTests extends BaseIntegrationTest {
+class UserControllerTest extends BaseIntegrationTest {
     @Autowired
     private GithubHttpClientStub githubHttpClientStub;
     @Autowired
@@ -63,7 +64,6 @@ class UserControllerTests extends BaseIntegrationTest {
         assertThat(result.getHeaders().getContentType()).isEqualTo(MediaType.APPLICATION_JSON);
         assertActualWithExpectedResponse(result.getBody(), "expected/repositories.json");
     }
-
 
     @Test
     void shouldGetResponseFor404RepositoryError() {

@@ -1,3 +1,5 @@
 package com.atipera.core;
 
-public record GithubRepository(String repositoryName, String ownerLogin, GithubBranches branches){}
+import java.util.List;
+
+public record GithubRepository(String repositoryName, String ownerLogin, List<GithubBranch> branches){}

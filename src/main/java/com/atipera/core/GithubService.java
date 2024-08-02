@@ -1,8 +1,8 @@
 package com.atipera.core;
 
-import com.atipera.http.clients.GithubHttpClient;
-import com.atipera.http.clients.GithubRepositoryBranchesDto;
-import com.atipera.http.clients.GithubRepositoryDto;
+import com.atipera.infrastructure.http.clients.GithubHttpClient;
+import com.atipera.infrastructure.http.clients.GithubRepositoryBranchesDto;
+import com.atipera.infrastructure.http.clients.GithubRepositoryDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +22,11 @@ public class GithubService {
                 .toList());
     }
 
-    public GithubBranches findBranches(String owner, String repo) {
+    private List<GithubBranch> findBranches(String owner, String repo) {
         List<GithubRepositoryBranchesDto> branches = githubHttpClient.findBranches(owner, repo);
 
-        return new GithubBranches(branches.stream()
+        return branches.stream()
                 .map(dto -> new GithubBranch(dto.name(), dto.commit().sha()))
-                .toList());
+                .toList();
     }
 }

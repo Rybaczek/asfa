@@ -22,12 +22,4 @@ public class UserControllerAbility {
 
         return restTemplateTest.exchange(request, String.class);
     }
-
-    public ResponseEntity<String> callFindBranches(String username, String repositoryName) {
-        RequestEntity<Void> request = get(format("/users/{0}/{1}/branches", username, repositoryName))
-                .accept(APPLICATION_JSON)
-                .build();
-
-        return restTemplateTest.exchange(request, String.class);
-    }
 }

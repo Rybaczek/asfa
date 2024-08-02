@@ -13,7 +13,7 @@ import static java.text.MessageFormat.format;
 @TestComponent
 @Slf4j
 public class AssertionResourceReader {
-    protected String readResource(String resourcePath) {
+    public String readResource(String resourcePath) {
         try {
             return StreamUtils.copyToString(new ClassPathResource(resourcePath).getInputStream(), StandardCharsets.UTF_8);
         } catch (IOException e) {

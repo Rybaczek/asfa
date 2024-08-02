@@ -1,4 +1,4 @@
-package com.atipera.http;
+package com.atipera.infrastructure.http;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

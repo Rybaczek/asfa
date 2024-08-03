@@ -87,5 +87,5 @@ class GithubServiceTest {
                 .should(never())
                 .findBranches(anyString(), anyString());
     }
-    //i love pugs
+    //i love pugz
 }

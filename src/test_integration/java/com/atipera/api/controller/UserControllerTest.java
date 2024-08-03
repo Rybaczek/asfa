@@ -3,7 +3,6 @@ package com.atipera.api.controller;
 import com.atipera.AssertionResourceReader;
 import com.atipera.BaseIntegrationTest;
 import com.atipera.http.clients.GithubHttpClientStub;
-import org.assertj.core.api.Assertions;
 import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;

@@ -2,3 +2,13 @@ rest-template-client:
   clients:
     github:
       root-url: https://api.github.com
+
+logbook:
+  format.style: http
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: TRACE
+    WireMock: WARN

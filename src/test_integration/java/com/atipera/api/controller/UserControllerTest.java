@@ -100,6 +100,23 @@ class UserControllerTest extends BaseIntegrationTest {
                 });
     }
 
+    @Test
+    void shouldGetResponseFor403ExceededRateLimitError() {
+        // GIVEN
+        String owner = "Rybaczek";
+        githubHttpClientStub.willReturn403ErrorResponseForRepository(owner, "github_stub_responses/403-api-rate-limit-response.json");
+
+        // WHEN && THEN
+        assertThatThrownBy(() -> userControllerAbility.callFindRepositories(owner))
+                .isInstanceOf(HttpClientErrorException.Forbidden.class)
+                .satisfies(e -> {
+                    HttpClientErrorException exception = (HttpClientErrorException) e;
+                    assertThat(Objects.requireNonNull(exception.getResponseHeaders()).getContentType()).isEqualTo(MediaType.APPLICATION_JSON);
+                    assertThat(exception.getStatusCode()).isEqualTo(HttpStatusCode.valueOf(403));
+                    assertActualWithExpectedResponse(exception.getResponseBodyAsString(), "expected/403-api-rate-limit-exceeded.json");
+                });
+    }
+
     private void assertActualWithExpectedResponse(String result, String expectedResponseResourcePath) {
         try {
             JSONAssert.assertEquals(assertionResourceReader.readResource(expectedResponseResourcePath), result, JSONCompareMode.STRICT);

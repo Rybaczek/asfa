@@ -41,6 +41,15 @@ public class GithubHttpClientStub {
         );
     }
 
+    public void willReturn403ErrorResponseForRepository(String username, String resourcePath) {
+        stubFor(userRepositoriesEndpoint(username)
+                .willReturn(aResponse()
+                        .withHeader(HttpHeaders.CONTENT_TYPE, "application/json")
+                        .withStatus(403)
+                        .withBody(assertionResourceReader.readResource(resourcePath)))
+        );
+    }
+
     public void willReturn404ErrorResponseForBranch(String owner, String repo, String resourcePath) {
         stubFor(userRepositoryBranchesEndpoint(owner, repo)
                 .willReturn(aResponse()

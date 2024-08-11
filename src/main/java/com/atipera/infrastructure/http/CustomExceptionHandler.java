@@ -18,6 +18,13 @@ public class CustomExceptionHandler {
         return new ResponseEntity<>(errorResponse, HttpStatusCode.valueOf(404));
     }
 
+    @ExceptionHandler(GithubApiRateLimitExceededException.class)
+    private ResponseEntity<ErrorResponse> handle(GithubApiRateLimitExceededException ex) {
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.FORBIDDEN.value(), ex.getMessage());
+        log.error("Access denied to requested resource", ex);
+        return new ResponseEntity<>(errorResponse, HttpStatus.FORBIDDEN);
+    }
+
     @ExceptionHandler(Exception.class)
     private ResponseEntity<ErrorResponse> handle(Exception ex) {
         ErrorResponse errorResponse = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), "The server encountered an unexpected condition that prevented it from fulfilling the request");
